@@ -1,0 +1,6 @@
+Flask==2.3.4
+flask-cors==4.0.0
+pymongo==4.11.1
+waitress==2.1.2
+cloudinary==1.33.0
+pydantic==2.5.2
