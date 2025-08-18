@@ -8,6 +8,7 @@ from Constructor.UploadCloudinary import upload_image
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import uuid
+import certifi
 from datetime import datetime
 from  Analytics.CO2Analytics import CalculateCO2
 from Analytics.CO2AnalyticsperDev import CalculateCO2forDevice
@@ -15,7 +16,7 @@ from Analytics.WattsAnalytics import calculateWatts
 app = Flask(__name__)
 CORS(app) 
 uri = "mongodb+srv://crisesv4:Tanke1804.@cluster0.ejxv3jy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-client = MongoClient(uri, server_api=ServerApi('1'))
+client = MongoClient(uri, server_api=ServerApi('1'), tlsCAFile=certifi.where())
 
 db = client["BlueSwitchData"]
 userscollection = db["Users"]
