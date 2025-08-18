@@ -13,7 +13,7 @@ from Analytics.CO2Analytics import CalculateCO2
 from Analytics.CO2AnalyticsperDev import CalculateCO2forDevice
 from Analytics.WattsAnalytics import calculateWatts
 import math
-
+import os
 # Inicializar app
 app = Flask(__name__)
 CORS(app)
