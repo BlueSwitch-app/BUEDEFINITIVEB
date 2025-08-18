@@ -4,3 +4,5 @@ pymongo==4.11.1
 waitress==2.1.2
 cloudinary==1.33.0
 pydantic==2.5.2
+orjson==3.10.7
+--only-binary=:all:
